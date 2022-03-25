@@ -29,8 +29,9 @@ void conta_tempo(){
   if(contador < 0){
     contador = tempo;
     digitalWrite(saida, HIGH);  
-    // delay(10000);
-    //digitalWrite(saida, LOW);
+    delay(10000);
+    digitalWrite(saida, LOW);
+    reinicia_timer();
   }
   
 }
